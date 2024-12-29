@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="day3.css"> 
+</head>
+<body>
+
+    
+    <header>
+        
+       
+        <div class="logo">
+            <i class="fa-solid fa-bookmark fa-beat fa-xl" style="color: palegreen;"></i> Library Management System
+        </div>
+
+        
+        <nav>
+            <a href="#dashboard">Users Dashboard</a>
+            <a href="#addStudent">Add Student</a>
+            <a href="#addTeacher">Add Teacher</a>
+            <a href="#viewStudents">View Students</a>
+            <a href="#viewTeachers">View Teachers</a>
+        </nav>
+
+        
+       
+        <div class="logout" onclick="logout()">Logout</div>
+    </header>
+
+    <script src="https://kit.fontawesome.com/54bbe8acf2.js" crossorigin="anonymous"></script>
+
+    <div class="hi">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#issueReturn">Issue/Return</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </div>
+
+    
+        <div class="flex-container">
+            <div id="box1">
+                
+                <i class="fa-solid fa-users-between-lines"></i>
+                
+                <br><br>
+                <h1>0</h1>
+                <p>Total Members</p>
+
+            </div>
+            
+            <div id="box2"> 
+            <i class="fa-solid fa-book"></i>
+            <br><br>
+            <h1>0</h1>
+            <p>Total Books</p>
+        </div>
+
+
+        <div id="box3">
+                
+            <i class="fa-solid fa-paperclip"></i>
+            
+            <br><br>
+            <h1>0</h1>
+            <p>Total Issue</p>
+
+        </div>
+        <div id="box4">
+                
+            <i class="fa-regular fa-registered"></i>
+            
+            <br><br>
+            <h1>0</h1>
+            <p>Total Return</p>
+            </div>
+            
+        </div>
+        <br><br><br>
+
+       
+       <!-- <div class="reporting">
+   
+    <input type="button" name="" id="" value="+ Add Issue" class="AddIssue">
+      
+    </div> -->
+
+
+
+    <div class="recent">
+        <div class="inside">
+        <p>Recents Circulations</p>
+        <button>+ Add Issue</button>
+        </div>
+
+        <div class="inbox">
+            <div>
+            <label>Show</label>
+            <select name="select" id="">
+                <option value=""></option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+            <label>entries</label>
+            </div>
+
+            <div>
+                <label>Search</label>
+                <input type="search">
+            </div>
+          
+        </div> 
+        <div class="table">
+            <table border="1px solid black">
+
+                <tr>
+                    <th>Member Id</th>
+                    <th>Book Id</th>
+                    <th>Issue Date</th>
+                    <th>Due Date</th>
+                    <th>Return Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                <td>7031</td>
+                <td>123</td>
+                <td>2024-12-22</td>
+                <td></td>
+                <td>2025-01-22</td>
+                <td>Given</td>
+                <td>Inactive</td>
+                </tr>
+                <tr>
+                <td>8001</td>
+                <td>123</td>
+                <td>2024-12-22</td>
+                <td></td>
+                <td>2024-07-22</td>
+                <td>Given</td>
+                <td>Active</td>
+                </tr>
+                <tr>
+                <td>0107</td>
+                <td>123</td>
+                <td>2024-12-22</td>
+                <td></td>
+                <td>2024-01-26</td>
+                <td>Given</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+            <td>06241</td>
+            <td>123</td>
+            <td>2024-12-22</td>
+            <td></td>
+            <td>2025-01-22</td>
+            <td>Given</td>
+            <td>Inactive</td>
+            </tr>
+
+
+
+
+
+
+
+        </table>
+        
+    </div>
+    
+    
+
+</div>
+    
+ 
+    <!-- <div class="reporting">
+
+        <h2>Recents Circulations</h2>
+    <div class="table">
+
+        <table>
+            <tr>
+                <th>Member ID</th>
+                <th>Book ID</th>
+                <th>Issue Date</th>
+                <th>Due date</th>
+                <th>Return Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Paridhi</td>
+                <td>B888 </td>
+                <td>2024-11-30</td>
+                <td>2024-12-28</td>
+                <td>2024-12-28</td>
+                <td>Active</td>
+                <td>9 days remaining</td>
+            </tr>
+        </table>
+    </div>
+    </div> -->
+            </div>
+</body>
+</html>

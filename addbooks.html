@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addbooks.css">
+    <script src="https://kit.fontawesome.com/54bbe8acf2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+       
+    <form>
+       
+        <fieldset>
+            <center><i class="fa-solid fa-book"></i></center> 
+            <h1 style="text-align: center;">Add Books</h1>
+
+            <div id="role">
+            <label for ="role"> Genre</label><br>
+            <select name="role" id="role" required>
+            </div>
+                <option value="">Select The Genre</option>
+                <option value="Fantasy/Romance">Fantasy/Romance</option>
+                <option value="Self Help">Self Help</option>
+                <option value="Horror">Romcom</option>
+
+
+             </select><br><br>
+
+             <label for="title">Title:</label><br>
+             <input type="text" id=member_id name="member_id" required pattern="\d{7}"
+             title="Member ID must be exactly 7 digits." minlength="7" maxlength="7"><br><br>
+
+
+             <label for="authors">Authors</label><br>
+             <input type="text" id="name" name="name" required pattern="[A-Za-z\s]"
+             title="Name should only contain letters and spaces."><br><br>
+
+
+             <label for="publisher">Publisher</label><br>
+             <input type="text" id="publisher" name="publisher" required
+             title="Please enter a valid publisher."><br><br>
+             
+             <label for="phone number">Phone number</label><br>
+             <input type="text" name="phone number" required><br><br>
+             <label for="isbn">ISBN</label><br>
+             <input type="text" name="ISBN" required><br><br>
+             <label for="edition">Edition</label><br>
+             <input type="language" name="language" required><br><br>
+
+
+
+             <div id="role">
+                <label for ="role"> Genre</label><br>
+                <select name="role" id="role" required>
+                </div>
+                    <option value="">Select The Genre</option>
+                    <option value="Fantasy/Romance">Fantasy/Romance</option>
+                    <option value="Self Help">Self Help</option>
+                    <option value="Horror">Romcom</option>
+
+
+
+        <div id="subject/field"></div>
+             <label for="subject/field">Subject Field</label><br>
+             <input type="text" name="subject/field" required><br><br>
+
+             <label for="data fields">Data Fields</label><br>
+             <input type="text" name="data fields" required><br><br>
+
+             <label for="member information">Member Information</label><br>
+             <input type="text" name="member information" required> <br><br>
+
+             <button>Add New Books</button>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

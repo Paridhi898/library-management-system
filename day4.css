@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#sidebar{
+    width: 200px;
+    height:650px;
+    border: 2px dotted black;
+    box-shadow: 0 0 5px 0;
+    
+}
+
+.top{
+    background-color: cornflowerblue;
+    height: 85px;
+    padding-left: 400px;
+    font-size: 30px;
+    display: flex;
+    width: 1022px;
+    color: #EBD6DC;
+    padding-top: 10px;
+    margin-left:2px ;
+}
+
+.container{
+    border: 1px solid black;
+    height: 650px;
+    display: flex;
+    width: 1325px;
+ 
+}p
+.logo{
+    padding: 10px 10px 10px 30px ;
+}
+
+
+    
+i{
+   padding-left: 20px;
+   margin-right: 4px;
+   margin-top: 5px ;
+
+   
+   
+}
+
+a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: black;
+}
+
+#sidebar div{
+        height: 60px;
+        width:295px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px dotted black;
+        font-size: 25px;
+    
+}
+#sidebar div:hover{
+    background-color:whitesmoke;
+   
+
+}
+
+footer{
+    text-align: center;
+    font-size: 30px;
+}
+#log{
+    margin-left: 330px;
+    margin-top: 20px;
+    height: 30px;
+    width: 70px;
+    background-color: #EBD6DC;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#contain{
+    width: 1000px;
+    height: 650px;
+    
+}
+.logo{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    font-weight: bolder;
+    height: 80px;
+}
+
+.internal{
+    display: flex;
+    margin-top: 20px;
+}
+.internal div{
+    margin-left: 40px;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+
+    background-image: linear-gradient(pink,beige);
+    padding: 50px 30px 20px 50px ;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+
+    background-image: linear-gradient(rgb(134, 245, 134), orange);
+    padding: 50px 30px 20px 50px ;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    
+    background-image: linear-gradient(blue, red);
+    padding: 50px 30px 20px 50px ;
+}
+.box4{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    padding: 50px 30px 20px 50px ;
+    background-image: linear-gradient(yellow, brown);
+   
+}
+.internal i{
+    font-size: 60px;
+    color: white;
+}
+.internal p{
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+    
+}
+.internal span{
+color: wheat;
+font-size: 25px;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 40px;
+}
+
+.recent{
+    height: 305px;
+    width:1005px;
+    border: 2px solid black;
+}
+.inside{
+    height:50px ;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 20px;
+}
+.inbox{
+    height: 80px;
+    width: 1000px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.inside button{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(2, 91, 126);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.inbox input{
+    height: 35px;
+}
+.table{
+    height: 200px;
+    width: 1000px;
+}
+.table table{
+    width: 1000px;
+    text-align: center ;
+    border-collapse:collapse ;
+    
+}
+.table table th:hover{
+    background-color: rgb(2, 91, 126);
+}

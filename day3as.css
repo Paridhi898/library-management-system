@@ -1,0 +1,42 @@
+/* Style for header */
+header {
+    background-color: orange;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo/Title style */
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation links style */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Logout style */
+.logout {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,278 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #2196f3, #f44336);
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logout-btn {
+    color: white;
+    text-decoration: none;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: calc(100vh - 64px);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: #666;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link.active {
+    background-color: #f44336;
+    color: white;
+}
+
+.sidebar-link:hover:not(.active) {
+    background-color: #f0f2f5;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Metrics Cards */
+.metrics-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.8), transparent);
+}
+
+.metric-card.members {
+    background: linear-gradient(135deg, #FF416C, #FF4B2B);
+}
+
+.metric-card.books {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.metric-card.issued {
+    background: linear-gradient(135deg, #FCB045, #FD1D1D);
+}
+
+.metric-card.returned {
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.metric-label {
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Circulations Section */
+.circulations-section {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.add-issue-btn {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-issue-btn:hover {
+    background-color: #1976d2;
+}
+
+/* Table Controls */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.entries-select {
+    padding: 0.25rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.search-input {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+/* Table Styles */
+.circulations-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.circulations-table th,
+.circulations-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.circulations-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.circulations-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Status Styles */
+.status-returned,
+.status-issued,
+.status-overdue {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+}
+
+.status-returned {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.status-issued {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.status-overdue {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.action-btn {
+    padding: 0.25rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #1976d2;
+}

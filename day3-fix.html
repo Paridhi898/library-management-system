@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="day3-fix.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">ApicStudio</div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link">Dashboard</a>
+            <a href="#" class="nav-link">Add Student</a>
+            <a href="#" class="nav-link">Add Teacher</a>
+            <a href="#" class="nav-link">View Students</a>
+            <a href="#" class="nav-link">View Teachers</a>
+        </nav>
+        <div class="user-section">
+            <span>Hi, Mr. Admin</span>
+            <a href="#" class="logout-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active">
+                    <i class="icon">📊</i>
+                    Dashboard
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">👤</i>
+                    Profile
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">📚</i>
+                    Library
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">📝</i>
+                    Book Requests
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">🔔</i>
+                    Notifications
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">👥</i>
+                    Users Management
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">⚙️</i>
+                    Settings
+                </a>
+                <a href="#" class="sidebar-link">
+                    <i class="icon">💾</i>
+                    Database Backup
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Metrics Cards -->
+            <div class="metrics-container">
+                <div class="metric-card members">
+                    <div class="metric-icon">👥</div>
+                    <div class="metric-value">150</div>
+                    <div class="metric-label">Total Members</div>
+                </div>
+                <div class="metric-card books">
+                    <div class="metric-icon">📚</div>
+                    <div class="metric-value">1250</div>
+                    <div class="metric-label">Total Books</div>
+                </div>
+                <div class="metric-card issued">
+                    <div class="metric-icon">⏰</div>
+                    <div class="metric-value">48</div>
+                    <div class="metric-label">Issue Books</div>
+                </div>
+                <div class="metric-card returned">
+                    <div class="metric-icon">↩️</div>
+                    <div class="metric-value">35</div>
+                    <div class="metric-label">Return Books</div>
+                </div>
+            </div>
+
+            <!-- Recent Circulations Section -->
+            <div class="circulations-section">
+                <div class="section-header">
+                    <h2>Recents Circulations</h2>
+                    <button class="add-issue-btn">+ Add Issue</button>
+                </div>
+                
+                <div class="table-controls">
+                    <div class="entries-control">
+                        Show 
+                        <select class="entries-select">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                        </select>
+                        entries
+                    </div>
+                    <div class="search-control">
+                        Search: 
+                        <input type="search" class="search-input">
+                    </div>
+                </div>
+
+                <table class="circulations-table">
+                    <thead>
+                        <tr>
+                            <th>Member Id</th>
+                            <th>Book ID</th>
+                            <th>Issue date</th>
+                            <th>Due Date</th>
+                            <th>Return Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>M001</td>
+                            <td>BK1234</td>
+                            <td>2024-01-15</td>
+                            <td>2024-01-29</td>
+                            <td>2024-01-28</td>
+                            <td><span class="status-returned">Returned</span></td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>M002</td>
+                            <td>BK1567</td>
+                            <td>2024-01-20</td>
+                            <td>2024-02-03</td>
+                            <td>-</td>
+                            <td><span class="status-issued">Issued</span></td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>M003</td>
+                            <td>BK1890</td>
+                            <td>2024-01-22</td>
+                            <td>2024-02-05</td>
+                            <td>-</td>
+                            <td><span class="status-issued">Issued</span></td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>M004</td>
+                            <td>BK2011</td>
+                            <td>2024-01-10</td>
+                            <td>2024-01-24</td>
+                            <td>2024-01-23</td>
+                            <td><span class="status-returned">Returned</span></td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>M005</td>
+                            <td>BK1432</td>
+                            <td>2024-01-18</td>
+                            <td>2024-02-01</td>
+                            <td>-</td>
+                            <td><span class="status-overdue">Overdue</span></td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
